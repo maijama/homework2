@@ -57,22 +57,23 @@ body {
   /* .desktop-ad {
     grid-area: desktop-ad;
     display: grid;
+    background-color: rgb(246, 246, 194);
     grid-column: 3;
     grid-row: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    width: 100%;
+    height: 200px;
   } */
 
   .desktop-ad img {
+    grid-area: desktop-ad;
+    display: grid;
     background-color: rgb(246, 246, 194);
     padding: 15px;
     width: 100%;
-    /* height: 200px; */
-    max-width: 250px;
-    height: auto;
-    object-fit: contain;
   }
 
   .desktop-ad img:hover {
@@ -142,6 +143,13 @@ body {
     .hero {
       grid-template-columns: 3fr 1fr;
     }
+
+    .desktop-ad {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      object-fit: contain;
+    }
   
     .body {
       grid-template-columns: 1fr 2fr;
@@ -164,7 +172,8 @@ body {
     }
 
     .header {
-      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
       grid-template-areas:
       "brand brand"
       "global-nav tools";
