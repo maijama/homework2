@@ -71,20 +71,6 @@ body {
     background-color: rgb(174, 225, 150);
     padding: 10px;
   }
-  
-  /* .desktop-ad {
-    grid-area: desktop-ad;
-    display: grid;
-    background-color: rgb(246, 246, 194);
-    grid-column: 3;
-    grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 200px;
-  } */
 
   .desktop-ad img {
     grid-area: desktop-ad;
@@ -194,8 +180,6 @@ body {
     }
 
     .header {
-      /* grid-template-columns: auto;
-      grid-template-rows: auto; */
       grid-template-areas:
       "brand brand"
       "global-nav tools";
